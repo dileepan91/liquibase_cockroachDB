@@ -52,7 +52,7 @@ public class Puzzle8 {
             int i2 = 0;
             int acc2 = 0;
             count.clear();
-            boolean perfect = false;
+            boolean perfect = true;
             for (; i2 < input.size(); ) {
                 if (!count.contains(i2)) {
                     count.add(i2);
@@ -78,11 +78,11 @@ public class Puzzle8 {
                             break;
                     }
                 } else {
-                    perfect = true;
+                    perfect = false;
                     break;
                 }
             }
-            if(!perfect){
+            if(perfect){
                 System.out.println("PERFECT!!!!!" + a + "--"+acc2);
                 break;
             }
